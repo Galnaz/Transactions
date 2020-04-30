@@ -1,0 +1,44 @@
+@page "/fetchdata"
+@using TransactionManagement.Shared
+@inject HttpClient Http
+
+<h1>Transactions</h1>
+
+@if (transactions == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Payment</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var transaction in transactions)
+            {
+                <tr>
+                    <td>@transaction.Id</td>
+                    <td>@transaction.Payment</td>
+                    <td>@transaction.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private TransactionDto[] transactions;
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        var response = await Http.GetFromJsonAsync<SearchTransactionQueryResponse>("api/Transactions");
+        transactions = response.Transactions;
+    }
+
+}

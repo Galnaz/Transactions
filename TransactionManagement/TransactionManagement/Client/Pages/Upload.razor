@@ -1,0 +1,42 @@
+﻿@page "/upload"
+
+@inject HttpClient Http
+
+@using System.IO;
+
+
+<h3>Upload</h3>
+
+
+<InputFile OnChange="HandleSelection" />
+
+<p>@status</p>
+
+@code {
+    string status;
+
+    async Task HandleSelection(IFileListEntry[] files)
+    {
+        var file = files.FirstOrDefault();
+        if (file != null)
+        {
+            var ms = new MemoryStream();
+            await file.Data.CopyToAsync(ms);
+
+            var byteArrayContent = new ByteArrayContent(ms.GetBuffer());
+            byteArrayContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(file.Type);
+
+            var content = new MultipartFormDataContent {
+                { byteArrayContent, "\"upload\"", file.Name }
+            };
+            var result = await Http.PostAsync("api/Documents", content);
+            if(!result.IsSuccessStatusCode)
+            {
+                var reason = await result.Content.ReadAsStringAsync();
+                status = $"ERROR dusing uploading, reason: {reason}";
+                return;
+            }
+            status = $"File {file.Name} loaded";
+        }
+    }
+}

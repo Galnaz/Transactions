@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="3.2.0-preview5.20216.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.0-preview.3.20181.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\TransactionManagement.Application\TransactionManagement.Application.csproj" />
+    <ProjectReference Include="..\..\TransactionManagement.Infrastructure\TransactionManagement.Infrastructure.csproj" />
+    <ProjectReference Include="..\Client\TransactionManagement.Client.csproj" />
+    <ProjectReference Include="..\Shared\TransactionManagement.Shared.csproj" />
+  </ItemGroup>
+
+
+</Project>

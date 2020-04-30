@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30021.99
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionManagement.Server", "TransactionManagement\Server\TransactionManagement.Server.csproj", "{35F9C2FC-89BE-4628-A8A1-7D0D33EB2539}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionManagement.Client", "TransactionManagement\Client\TransactionManagement.Client.csproj", "{600371E3-0835-405A-B0EE-42955908311A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionManagement.Shared", "TransactionManagement\Shared\TransactionManagement.Shared.csproj", "{1961DBCF-41D4-4097-B1B7-29A55A426008}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionManagement.Application", "TransactionManagement.Application\TransactionManagement.Application.csproj", "{CD0B17FD-960A-46A1-AC2D-26DAE7E746C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionManagement.Infrastructure", "TransactionManagement.Infrastructure\TransactionManagement.Infrastructure.csproj", "{341D445C-3EE5-4655-A2B9-8F390683E71E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionManagement.InfrastructureAbstractions", "TransactionManagement.InfrastructureAbstractions\TransactionManagement.InfrastructureAbstractions.csproj", "{096F8D8F-09A6-4084-8996-48F0B6018EF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionManagement.Domain", "TransactionManagement.Domain\TransactionManagement.Domain.csproj", "{52994D49-7352-4922-AA06-EC3E43F0EA11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35F9C2FC-89BE-4628-A8A1-7D0D33EB2539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F9C2FC-89BE-4628-A8A1-7D0D33EB2539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F9C2FC-89BE-4628-A8A1-7D0D33EB2539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F9C2FC-89BE-4628-A8A1-7D0D33EB2539}.Release|Any CPU.Build.0 = Release|Any CPU
+		{600371E3-0835-405A-B0EE-42955908311A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{600371E3-0835-405A-B0EE-42955908311A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{600371E3-0835-405A-B0EE-42955908311A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{600371E3-0835-405A-B0EE-42955908311A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1961DBCF-41D4-4097-B1B7-29A55A426008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1961DBCF-41D4-4097-B1B7-29A55A426008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1961DBCF-41D4-4097-B1B7-29A55A426008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1961DBCF-41D4-4097-B1B7-29A55A426008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD0B17FD-960A-46A1-AC2D-26DAE7E746C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD0B17FD-960A-46A1-AC2D-26DAE7E746C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD0B17FD-960A-46A1-AC2D-26DAE7E746C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD0B17FD-960A-46A1-AC2D-26DAE7E746C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{341D445C-3EE5-4655-A2B9-8F390683E71E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{341D445C-3EE5-4655-A2B9-8F390683E71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{341D445C-3EE5-4655-A2B9-8F390683E71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{341D445C-3EE5-4655-A2B9-8F390683E71E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{096F8D8F-09A6-4084-8996-48F0B6018EF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{096F8D8F-09A6-4084-8996-48F0B6018EF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{096F8D8F-09A6-4084-8996-48F0B6018EF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{096F8D8F-09A6-4084-8996-48F0B6018EF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52994D49-7352-4922-AA06-EC3E43F0EA11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52994D49-7352-4922-AA06-EC3E43F0EA11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52994D49-7352-4922-AA06-EC3E43F0EA11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52994D49-7352-4922-AA06-EC3E43F0EA11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFCBCA32-82A1-42D9-B6EF-F879335508BF}
+	EndGlobalSection
+EndGlobal
